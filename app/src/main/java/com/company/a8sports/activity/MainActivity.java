@@ -25,9 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initFragment();
         initView();
-        changeShowFragment(0);
+        initFragment();
     }
 
     private void initView() {
@@ -64,16 +63,15 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(R.id.main_layout,fragments.get(0)).commit();
     }
 
+    //点击下方导航栏radiobutton切换fragment界面显示
     private void changeShowFragment(int current) {
-         if(pos!=current){
              FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
              if(fragments.get(current).isAdded()){
-                 transaction.show(fragments.get(current)).hide(fragments.get(pos)).commit();
+                 transaction.hide(fragments.get(pos)).show(fragments.get(current)).commit();
              }else{
                  transaction.add(R.id.main_layout,fragments.get(current)).hide(fragments.get(pos)).commit();
              }
              pos=current;
-         }
     }
 
 
