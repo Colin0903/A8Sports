@@ -17,6 +17,11 @@ public class MatchFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_match,container,false);
+        initView(view);
         return view;
+    }
+
+    private void initView(View view) {
+
     }
 }
