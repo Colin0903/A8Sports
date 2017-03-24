@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorhomeradio">#fafbfe</color>
     <color name="colorbackground">#ffffff</color>
+    <color name="colortabbackground">#232323</color>
+    <color name="colortabselected">#f1c716</color>
 </resources>

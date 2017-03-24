@@ -20,4 +20,9 @@ public class AttentionFragment extends BaseFragment {
         View view=inflater.inflate(R.layout.fragment_attention,container,false);
         return view;
     }
+
+    @Override
+    public void initView() {
+
+    }
 }

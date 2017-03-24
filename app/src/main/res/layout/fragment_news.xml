@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="News"
-        android:textColor="#f00"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_news"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:background="@color/colortabbackground"
+        app:tabSelectedTextColor="@color/colortabselected"
+        app:tabIndicatorColor="@color/colortabselected"
+        app:tabIndicatorHeight="5dp"
+        >
+
+    </android.support.design.widget.TabLayout>
+    <ImageView
+        android:id="@+id/iv_news_edit"
+        android:layout_toRightOf="@id/tablayout_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/news_edit_add_normal"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/tablayout_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

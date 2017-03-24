@@ -15,7 +15,7 @@ import com.company.a8sports.R;
  *
  */
 
-public class BaseFragment extends Fragment{
+public abstract class BaseFragment extends Fragment{
 
     //fragment第一次连接时调用的方法  onAttach()
     @Override
@@ -29,4 +29,5 @@ public class BaseFragment extends Fragment{
         View view=inflater.inflate(R.layout.fragment_base,container,false);
         return view;
     }
+    public abstract void initView();
 }

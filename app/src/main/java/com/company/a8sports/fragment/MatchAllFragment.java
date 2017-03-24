@@ -22,6 +22,11 @@ public class MatchAllFragment extends BaseFragment {
         return view;
     }
 
+    @Override
+    public void initView() {
+
+    }
+
     private void initView(View view) {
     }
 }

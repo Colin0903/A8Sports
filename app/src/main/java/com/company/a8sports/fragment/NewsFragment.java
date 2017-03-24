@@ -20,4 +20,9 @@ public class NewsFragment extends BaseFragment {
         View view=inflater.inflate(R.layout.fragment_news,container,false);
         return view;
     }
+
+    @Override
+    public void initView() {
+
+    }
 }

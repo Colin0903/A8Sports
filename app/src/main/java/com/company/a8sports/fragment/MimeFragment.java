@@ -20,4 +20,9 @@ public class MimeFragment extends BaseFragment {
         View view=inflater.inflate(R.layout.fragment_mime,container,false);
         return view;
     }
+
+    @Override
+    public void initView() {
+
+    }
 }

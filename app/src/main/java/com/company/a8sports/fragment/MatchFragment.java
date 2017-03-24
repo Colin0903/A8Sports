@@ -33,6 +33,11 @@ public class MatchFragment extends BaseFragment {
         return view;
     }
 
+    @Override
+    public void initView() {
+
+    }
+
     private void initView(View view) {
         fragments.add(new MatchHotFragment());
         fragments.add(new MatchAllFragment());
